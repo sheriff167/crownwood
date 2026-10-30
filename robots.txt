@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sheriff167.github.io/crownwood/sitemap.xml
