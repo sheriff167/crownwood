@@ -17,17 +17,17 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "Crown Wood Timber Enterprises Ltd", "alternateName": ["Victory Saw Millers", "Victory Sawmill"], "url": "https://crownwood.co.ke/", "image": "https://crownwood.co.ke/img/share.jpg", "telephone": "+254740852492", "address": {"@type": "PostalAddress", "streetAddress": "All Nations, Mawanga Road", "addressLocality": "Nakuru", "addressCountry": "KE"}, "areaServed": "Kenya", "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "06:00", "closes": "22:00"}], "hasMap": "https://www.google.com/maps/search/?api=1&query=VICTORY+SAW+MILLERS", "description": "Sawmill and timber yard in Nakuru: timber sales, sawing and milling, doors, door frames, windows, roofing timber, treated poles, plywood and furniture. Delivery across Kenya."}</script>
 <meta name="google-site-verification" content="-cBXtKlcUZ47Ne98-xcssQm0zfTftqpEpsK1tEbgngM">
 <meta name="google-site-verification" content="oaET6eJwnMzWV5RQW2eeLy8fXJev05tPNR9xeu_-JHY">
-<meta name="theme-color" content="#151210">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23151210'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial' font-weight='900' font-size='34' text-anchor='middle' fill='%23EBA64A'%3ECW%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0D2116">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230D2116'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial' font-weight='900' font-size='34' text-anchor='middle' fill='%23E0B341'%3ECW%3C/text%3E%3C/svg%3E">
 <style>
 /* Layout: a single walk through the yard — log, cut, board, door — then the index of everything that leaves it.
    One deliberate look: charred timber ground, bone text, the orange of a fresh saw cut. Single theme by choice. */
 :root{
-  --char:#151210;
-  --char-2:#1F1A16;
+  --char:#0D2116;
+  --char-2:#143022;
   --bone:#ECE4D6;
-  --dust:#A5998A;
-  --cut:#EBA64A;
+  --dust:#A8B9A9;
+  --cut:#E0B341;
   --line:rgba(236,228,214,.14);
   --wa:#25A55F;
   --f-display:"Big Shoulders Display", "Oswald", Impact, "Arial Narrow", sans-serif;
@@ -84,7 +84,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 /* wood plates */
 .plate{position:relative;overflow:hidden;background:#3a2d22}
 .plate canvas,.plate img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover}
-.plate .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(10,8,6,.55));pointer-events:none}
+.plate .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(6,20,12,.55));pointer-events:none}
 .stamp{position:absolute;font-family:var(--f-display);font-weight:900;text-transform:uppercase;color:#2a1608;mix-blend-mode:multiply;opacity:.78;line-height:.85;pointer-events:none;border:4px solid #2a1608;padding:.18em .3em .1em;letter-spacing:.03em}
 .cap{position:absolute;left:16px;bottom:14px;right:16px;display:flex;justify-content:space-between;gap:12px;color:var(--bone);z-index:2}
 .hero-plate{height:clamp(320px,62vh,640px);margin-top:0}
@@ -190,19 +190,19 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 @media (max-width:900px){.visit .grid{grid-template-columns:1fr;gap:40px}}
 
 /* order */
-.order{background:var(--cut);color:#1B1108}
+.order{background:var(--cut);color:#0B1E12}
 .order .w{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:56px;padding-block:110px}
-.order h2{font-size:clamp(3.4rem,8.5vw,7.6rem);color:#1B1108}
+.order h2{font-size:clamp(3.4rem,8.5vw,7.6rem);color:#0B1E12}
 .order .lead{max-width:38ch;margin-top:22px;font-weight:500}
 form{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px;align-content:start}
 form .full{grid-column:1/-1}
 label{display:flex;flex-direction:column;gap:6px;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase}
-input,select,textarea{font:inherit;font-family:var(--f-body);font-size:1.05rem;letter-spacing:0;text-transform:none;color:#1B1108;background:transparent;border:0;border-bottom:2px solid #1B1108;padding:10px 0;border-radius:0;width:100%;min-width:0}
-input::placeholder,textarea::placeholder{color:rgba(27,17,8,.5)}
+input,select,textarea{font:inherit;font-family:var(--f-body);font-size:1.05rem;letter-spacing:0;text-transform:none;color:#0B1E12;background:transparent;border:0;border-bottom:2px solid #0B1E12;padding:10px 0;border-radius:0;width:100%;min-width:0}
+input::placeholder,textarea::placeholder{color:rgba(11,30,18,.5)}
 select option{background:#fff;color:#111}
 textarea{min-height:90px;resize:vertical}
 input:focus,select:focus,textarea:focus{outline:none;border-bottom-color:#fff}
-.send{display:inline-flex;align-items:center;gap:10px;background:#1B1108;color:var(--bone);border:0;border-radius:999px;padding:16px 26px;font:inherit;font-weight:600;font-size:1rem;cursor:pointer}
+.send{display:inline-flex;align-items:center;gap:10px;background:#0B1E12;color:var(--bone);border:0;border-radius:999px;padding:16px 26px;font:inherit;font-weight:600;font-size:1rem;cursor:pointer}
 .send:hover{background:#000}
 .send svg{width:20px;height:20px}
 .ff{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
@@ -213,13 +213,13 @@ input:focus,select:focus,textarea:focus{outline:none;border-bottom-color:#fff}
 /* our work */
 .hero-plate.photo .stamp{color:#fff;border-color:#fff;mix-blend-mode:normal;opacity:.92;text-shadow:0 2px 18px rgba(0,0,0,.35)}
 .hero-plate.photo .s2{display:none}
-.hero-plate.photo .shade{background:linear-gradient(180deg,rgba(10,8,6,.15),rgba(10,8,6,.1) 50%,rgba(10,8,6,.7))}
+.hero-plate.photo .shade{background:linear-gradient(180deg,rgba(6,20,12,.15),rgba(6,20,12,.1) 50%,rgba(6,20,12,.7))}
 .work{padding-block:110px 120px}
 .work-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px}
 .shot{position:relative;margin:0;overflow:hidden;background:var(--char-2);cursor:zoom-in;border:0;padding:0;color:inherit;font:inherit;text-align:left;display:block}
 .shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .9s cubic-bezier(.2,.8,.2,1),filter .5s;filter:saturate(.92)}
 .shot:hover img,.shot:focus-visible img{transform:scale(1.045);filter:saturate(1.05)}
-.shot .lab{position:absolute;left:0;right:0;bottom:0;padding:44px 16px 14px;background:linear-gradient(180deg,transparent,rgba(10,8,6,.82));display:flex;flex-direction:column;gap:4px}
+.shot .lab{position:absolute;left:0;right:0;bottom:0;padding:44px 16px 14px;background:linear-gradient(180deg,transparent,rgba(6,20,12,.82));display:flex;flex-direction:column;gap:4px}
 .shot .lab b{font-family:var(--f-display);font-weight:800;text-transform:uppercase;font-size:clamp(1.3rem,2.2vw,1.9rem);line-height:1;color:var(--bone)}
 .shot .lab span{color:var(--cut)}
 .s-a{grid-column:span 7;aspect-ratio:4/3}
@@ -246,7 +246,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-bottom-color:#fff}
   .s-f{aspect-ratio:4/3}
   .s-d{margin-top:0}
 }
-.lb{position:fixed;inset:0;z-index:50;background:rgba(10,8,6,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:calc(20px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(6,20,12,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:calc(20px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
 .lb[hidden]{display:none}
 .lb img{max-width:min(100%,900px);max-height:78vh;object-fit:contain}
 .lb p{margin:0;color:var(--dust);text-align:center}
@@ -656,7 +656,7 @@ function drawStory(){
         const yy=cy-r+i*sh+((i-.5)-(N-1)/2)*gap*eb;
         const len=Math.min(1,b*1.6-(i-1)*.08);
         if(len<=0)continue;
-        g.strokeStyle=`rgba(235,166,74,${.85*k})`;g.lineWidth=2;g.beginPath();g.moveTo(cx-r,yy);g.lineTo(cx-r+2*r*len,yy);g.stroke();
+        g.strokeStyle=`rgba(224,179,65,${.85*k})`;g.lineWidth=2;g.beginPath();g.moveTo(cx-r,yy);g.lineTo(cx-r+2*r*len,yy);g.stroke();
       }
     }
     g.restore();
