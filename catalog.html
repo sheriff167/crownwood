@@ -63,11 +63,12 @@ body {
   color: var(--fg);
   font-family: 'Work Sans', system-ui, sans-serif;
   line-height: 1.5;
-  max-width: 720px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 .content {
+  max-width: 900px;
+  margin: 0 auto;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
@@ -334,19 +335,21 @@ tr:nth-child(even) td { background: var(--stripe); }
 /* Timber prices over the log photo */
 .price-hero {
   position: relative;
-  background: #120d08;
+  background: #0D2116;
   margin-bottom: 1.5rem;
   color: #fff;
 }
 .price-hero::before {
   content: "";
-  position: absolute; left: 0; right: 0; top: 0; height: min(720px, 72%);
+  position: absolute; inset: 0;
   background:
-    linear-gradient(180deg, rgba(18,13,8,0.1) 0%, rgba(18,13,8,0.5) 35%, rgba(18,13,8,0.88) 75%, #120d08 100%),
-    url(img/cat/log-bg.jpg) 70% 40% / cover no-repeat;
+    linear-gradient(180deg, rgba(13,33,22,0.55) 0%, rgba(13,33,22,0.86) 340px, rgba(13,33,22,0.94) 100%),
+    url(img/work-boards.jpg) 50% 40% / cover no-repeat;
 }
 .ph-in {
   position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 3.5rem max(16px, env(safe-area-inset-right, 0px)) 1.5rem max(16px, env(safe-area-inset-left, 0px));
 }
 .ph-logo { display: block; height: 60px; width: auto; margin-bottom: 0.7rem; filter: drop-shadow(0 2px 8px rgba(0,0,0,.5)); }
@@ -354,7 +357,7 @@ tr:nth-child(even) td { background: var(--stripe); }
 .ph-brand .sub { color: #E0B341; font-family: 'Bitter', Georgia, serif; font-weight: 600; margin-top: 0.3rem; }
 .price-hero .ph-title { color: #fff; margin-top: 2.2rem; border-left-color: #E0B341; }
 .price-hero .price-group {
-  background: rgba(16,12,8,0.55);
+  background: rgba(10,26,17,0.72);
   border: 1px solid rgba(224,179,65,0.28);
   border-radius: 8px;
   padding: 0.8rem 0.4rem 0.3rem;
@@ -371,6 +374,17 @@ tr:nth-child(even) td { background: var(--stripe); }
 .ph-acts{display:flex;gap:8px;justify-content:center;margin-top:10px}
 .ph-acts a{font-size:14px;font-weight:600;text-decoration:none;padding:7px 14px;border-radius:6px;border:1.5px solid currentColor;color:inherit}
 .ph-acts a.wa{background:#25A55F;border-color:#25A55F;color:#fff}
+.ph-grid{display:grid;grid-template-columns:1fr;gap:0 1.5rem}
+@media (min-width:900px){
+  .ph-grid{grid-template-columns:1fr 1fr}
+  .ph-in{padding-top:4.5rem;padding-bottom:2.5rem}
+  .ph-brand h1{font-size:2.8rem}
+  .ph-logo{height:76px}
+  .price-hero .ph-title{font-size:1.5rem}
+  .price-hero .price-group h3{font-size:1.3rem}
+  .price-hero th{font-size:.85rem}
+  .price-hero td{font-size:1.15rem;padding-top:.75rem;padding-bottom:.75rem}
+}
 .home-link{position:absolute;top:14px;left:16px;z-index:5;color:#E0B341;font:600 14px/1 system-ui,sans-serif;text-decoration:none;background:rgba(13,33,22,.75);padding:8px 12px;border-radius:6px}
 </style>
 <!-- Google Analytics (GA4). Measurement ID G-2ZXFBZTMYE (property crownwood.co.ke under crownwoodlimited@gmail.com).
@@ -388,6 +402,7 @@ window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(argu
 <div class="ph-in">
 <div class="ph-brand"><img class="ph-logo" src="img/logo-mark.png" alt="Crownwood logo" width="75" height="60"><h1>Crown Wood Timber</h1><div class="sub">Enterprises Ltd &middot; Nakuru</div></div>
 <h2 class="section-title ph-title">Timber Prices</h2>
+<div class="ph-grid">
 <div class="price-group">
   <h3>Cypress <span class="badge">Most popular</span></h3>
   <table>
@@ -432,6 +447,7 @@ window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(argu
     <tr><td>3 &times; 2</td><td>KSh 23</td></tr>
     <tr><td>6 &times; 2</td><td>KSh 31</td></tr>
   </table>
+</div>
 </div>
 </div>
 </div>
