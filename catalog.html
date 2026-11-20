@@ -368,6 +368,10 @@ tr:nth-child(even) td { background: var(--stripe); }
 .price-hero tr:last-child td { border-bottom: none; }
 .price-hero td:last-child { color: #E0B341; }
 .price-hero tr:nth-child(even) td { background: rgba(255,255,255,0.05); }
+.ph-acts{display:flex;gap:8px;justify-content:center;margin-top:10px}
+.ph-acts a{font-size:14px;font-weight:600;text-decoration:none;padding:7px 14px;border-radius:6px;border:1.5px solid currentColor;color:inherit}
+.ph-acts a.wa{background:#25A55F;border-color:#25A55F;color:#fff}
+.home-link{position:absolute;top:14px;left:16px;z-index:5;color:#E0B341;font:600 14px/1 system-ui,sans-serif;text-decoration:none;background:rgba(13,33,22,.75);padding:8px 12px;border-radius:6px}
 </style>
 <!-- Google Analytics (GA4). Measurement ID G-2ZXFBZTMYE (property crownwood.co.ke under crownwoodlimited@gmail.com).
      Find it at analytics.google.com > Admin > Data streams > Web. -->
@@ -378,6 +382,7 @@ window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(argu
 </script>
 </head>
 <body>
+<a class="home-link" href="./">&larr; crownwood.co.ke</a>
 
 <div class="price-hero">
 <div class="ph-in">
@@ -507,8 +512,8 @@ window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(argu
   <h2>Get in Touch</h2>
   <p class="meta">Call or WhatsApp for orders and quotes</p>
   <div class="phone-row">
-    <div class="phone-item">0722 779 015<small>Main</small></div>
-    <div class="phone-item">0727 838 977</div>
+    <div class="phone-item">0722 779 015<small>Main</small><span class="ph-acts"><a href="tel:+254722779015">Call</a><a class="wa" href="https://wa.me/254722779015" target="_blank" rel="noopener">WhatsApp</a></span></div>
+    <div class="phone-item">0727 838 977<small>Second line</small><span class="ph-acts"><a href="tel:+254727838977">Call</a><a class="wa" href="https://wa.me/254727838977" target="_blank" rel="noopener">WhatsApp</a></span></div>
   </div>
   <p class="meta">All Nations, Mawanga Road, Nakuru</p>
   <p class="meta">Mon &ndash; Sat: 6:00 AM &ndash; 10:00 PM</p>
@@ -518,5 +523,10 @@ window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(argu
   Crown Wood Timber Enterprises Ltd &middot; Quality Timber, Stronger Tomorrow
 </div>
 </div>
+<script>
+/* Open the product group named in the link, e.g. catalog.html#doors */
+(function(){var h=location.hash.slice(1);if(!h)return;var d=document.getElementById(h);if(d&&d.tagName==='DETAILS'){d.open=true;setTimeout(function(){d.scrollIntoView({block:'start'});},50);}})();
+</script>
+<script src="track.js"></script>
 </body>
 </html>
